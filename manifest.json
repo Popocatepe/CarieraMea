@@ -1,0 +1,14 @@
+{
+  "name": "CarieraMea — Gaseste Cariera Potrivita",
+  "short_name": "CarieraMea",
+  "description": "Descopera cariera potrivita pentru tine prin 30 de exercitii bazate pe cercetari in psihologia carierei",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0d2b45",
+  "theme_color": "#0d2b45",
+  "orientation": "portrait-primary",
+  "lang": "ro",
+  "icons": [
+    { "src": "/icons/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
