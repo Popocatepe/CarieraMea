@@ -1,14 +1,28 @@
 # CarieraMea — Găsește Cariera Potrivită
 
-Aplicație web progresivă (PWA) pentru descoperirea carierei potrivite, bazată pe cercetări în psihologia carierei.
+Aplicație web progresivă (PWA) pentru explorare și orientare în carieră.
 
-## Publicare pe Netlify prin GitHub Desktop
+## Fișiere principale
 
-1. Descarcă GitHub Desktop de la desktop.github.com
-2. Creează repository nou → selectează folderul `carieramea-site`
-3. Publică pe GitHub
-4. Pe Netlify: Add new site → Import from GitHub → selectează repository-ul
-5. Site configuration → Environment variables → Adaugă `ANTHROPIC_API_KEY`
-6. Trigger deploy
+- `index.html` — jocul CarieraMea v2
+- `manifest.json` — configurare PWA
+- `sw.js` — service worker pentru cache
+- `netlify.toml` — configurare Netlify
+- `netlify/functions/chat.js` — funcție serverless pentru analiza răspunsurilor
+- `icons/icon.svg` — iconiță aplicație
 
-Costul per utilizator: ~$0.01-0.015 (4-7 bani RON) per joc complet.
+## Publicare pe Netlify
+
+1. Conectează acest repository la Netlify.
+2. Lasă setările din `netlify.toml`.
+3. Adaugă variabila de mediu:
+
+```text
+ANTHROPIC_API_KEY
+```
+
+4. Fă redeploy.
+
+## Notă
+
+Cheia API nu trebuie pusă direct în cod.
